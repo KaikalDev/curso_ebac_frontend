@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Cartório EBAC-online</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="conteiner">
+        <header>
+            <h1>Cartório EBAC-online</h1>
+        </header>
+        <form id="form">
+            <input id="Nome" name="Nome" type="text" placeholder="Nome">
+            <input id="Cpf" name="Cpf"  placeholder="CPF" >
+            <input id="cargo" name="cargo" type="text" placeholder="Cargo">
+            <input id="tel" name="tel" type="tel" placeholder="Telefone">
+            <input id="cep" name="cep"  placeholder="CEP">
+            <button type="submit">Adicionar</button>
+        </form>
+        <table cellspacing = "0">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>CPF</th>
+                    <th>Cargo</th>
+                    <th>Telefone</th>
+                    <th>CEP</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td id="resposta-nome">---</td>
+                    <td id="resposta-CPF">---</td>
+                    <td id="resposta-cargo">---</td>
+                    <td id="resposta-telefone">---</td>
+                    <td id="resposta-CEP">---</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/js/jquery.mask.min.js"></script>
+    <script src="/js/jquery.validate.min.js"></script>
+    <script src="/js/messages_pt_BR.min.js"></script>
+    <script src="/js/validacao.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
