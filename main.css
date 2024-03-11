@@ -1,0 +1,56 @@
+.sobre-a-loja img{
+    height: 550px;
+}
+footer img {
+    height: 30px;
+    margin: 5px;
+}
+footer li{
+    list-style: none;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    margin: 5px;
+}
+button {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+h2 {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ff6161;
+    font-size: 36px;
+    font-style: italic;
+    color: #ff6161;
+} 
+header {
+    color: #FFFFFF;
+    background-color: #ff6161;
+    padding: 16px 0;
+    margin-bottom: 16px;
+}
+
+header h1{
+    font-size: 36px;
+    font-weight: bold;
+}
+header .container,
+header ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+header a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
