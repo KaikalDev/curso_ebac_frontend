@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício boas práticas de CSS</title>
+    <link rel="stylesheet" href="/bem/main.css">
+</head>
+<body>
+    <div class="produtos">
+        <div class="produto">
+            <img class="produto__imagem" src="https://via.placeholder.com/100x100">
+            <h4 class="produto__nome">Nome do produto</h4>
+            <p class="produto__descricao">
+                Descrição do produto
+            </p>
+        </div>
+        <div class="produto">
+            <img class="produto__imagem" src="https://via.placeholder.com/100x100">
+            <h4 class="produto__nome">Nome do produto</h4>
+            <p class="produto__descricao">
+                Descrição do produto
+            </p>
+        </div>
+        <div class="produto">
+            <img class="produto__imagem" src="https://via.placeholder.com/100x100">
+            <h4 class="produto__nome">Nome do produto</h4>
+            <p class="produto__descricao">
+                Descrição do produto
+            </p>
+        </div>
+    </div>
+    <script>
+        const destaque = document.querySelectorAll('.produto');
+        for (let i = 0; i < destaque.length; i++) {
+            destaque[i].addEventListener('click', function(e) {
+                const item = e.currentTarget;
+
+                const estaDestaque = item.classList.contains('produto--destaque');
+                if (estaDestaque) {
+                    item.classList.remove('produto--destaque');
+                } else {
+                    destaque.forEach(item => {
+                        item.classList.remove('produto--destaque');
+                    });
+                    item.classList.add('produto--destaque');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
